@@ -19,4 +19,4 @@ Examples of unacceptable behavior:
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at junglegrid-maintainers@protonmail.com. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Your privacy will be respected.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at run@junglegrid.dev. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. Your privacy will be respected.
