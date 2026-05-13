@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "junglegrid": {
+      "command": "npx",
+      "args": ["-y", "@jungle-grid/mcp"],
+      "env": {
+        "JUNGLE_GRID_API_KEY": "jg_..."
+      }
+    }
+  }
+}
