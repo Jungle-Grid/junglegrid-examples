@@ -1,4 +1,21 @@
-# Junglegrid Examples
+<div align="center">
+  <a href="https://junglegrid.dev">
+    <img src="./assets/junglegrid-logo.png" alt="Jungle Grid logo" width="128">
+  </a>
+
+  <h1>Jungle Grid Examples</h1>
+
+  <p><strong>Runnable templates for the Jungle Grid CLI, MCP hosts, and backend API integrations.</strong></p>
+
+  <p>
+    <a href="https://junglegrid.dev"><img alt="Website" src="https://img.shields.io/badge/Visit-junglegrid.dev-111827?style=for-the-badge"></a>
+    <a href="https://junglegrid.dev/docs"><img alt="Docs" src="https://img.shields.io/badge/Read-the_docs-2563eb?style=for-the-badge"></a>
+    <a href="https://x.com/jungle_grid"><img alt="Follow Jungle Grid on X" src="https://img.shields.io/badge/Follow-@jungle__grid-000000?style=for-the-badge&logo=x"></a>
+    <a href="https://discord.gg/kpJqxXFFCs"><img alt="Join the Jungle Grid Discord" src="https://img.shields.io/badge/Join-Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white"></a>
+    <a href="mailto:run@junglegrid.dev"><img alt="Email Jungle Grid" src="https://img.shields.io/badge/Email-run@junglegrid.dev-16a34a?style=for-the-badge"></a>
+    <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-f97316?style=for-the-badge"></a>
+  </p>
+</div>
 
 Runnable examples for using [Jungle Grid](https://junglegrid.dev) from the CLI, MCP-aware AI hosts, and your own backend services.
 
