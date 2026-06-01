@@ -1,0 +1,23 @@
+name: PR CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static:
+    if: github.event_name != 'pull_request' || !github.event.pull_request.draft
+    uses: Jungle-Grid/.github/.github/workflows/reusable-static-pr-ci.yml@b7d9082535447efbb420fb3c69923ba57d5ae542
+    permissions:
+      contents: read
+    with:
+      working-directory: "."
+      run-secret-scan: true
