@@ -5,7 +5,7 @@
       "args": ["-y", "@jungle-grid/mcp"],
       "env": {
         "JUNGLE_GRID_API_KEY": "jg_...",
-        "JUNGLE_GRID_API_URL": "https://api.junglegrid.dev"
+        "JUNGLE_GRID_API_URL": "https://your-orchestrator.example.com"
       }
     }
   }
