@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "junglegrid": {
+      "command": "npx",
+      "args": ["-y", "@jungle-grid/mcp"],
+      "env": {
+        "JUNGLE_GRID_API_KEY": "jg_...",
+        "JUNGLE_GRID_API_URL": "https://your-orchestrator.example.com"
+      }
+    }
+  }
+}

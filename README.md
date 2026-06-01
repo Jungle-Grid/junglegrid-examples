@@ -23,12 +23,14 @@ Jungle Grid is a workload-first GPU orchestration platform. You describe the job
 
 ## What is in this repo
 
-- `claude-desktop/` — Claude Desktop MCP configuration examples
-- `cursor/` — Cursor MCP configuration examples
-- `inference-jobs/` — runnable CLI templates for inference workloads
-- `batch-jobs/` — runnable CLI templates for batch workloads
-- `prompts/` — prompts for turning natural-language requests into valid Jungle Grid jobs
-- `api/` — server-side REST integration examples for Node.js and Python
+- `claude-desktop/` - Claude Desktop MCP configuration examples
+- `cursor/` - Cursor MCP configuration examples
+- `windsurf/` - Windsurf Cascade MCP configuration examples
+- `mcp-hosts/` - generic MCP host configuration reference
+- `inference-jobs/` - runnable CLI templates for inference workloads
+- `batch-jobs/` - runnable CLI templates for batch workloads
+- `prompts/` - prompts for turning natural-language requests into valid Jungle Grid jobs
+- `api/` - server-side REST integration examples for Node.js and Python
 
 ## Quick start
 
@@ -68,17 +70,19 @@ npx @jungle-grid/cli@latest status <job-id>
 
 ### CLI jobs
 
-- Start with [inference-jobs/README.md](/home/invinc/code/junglegrid-examples/inference-jobs/README.md) for inference templates.
-- Start with [batch-jobs/README.md](/home/invinc/code/junglegrid-examples/batch-jobs/README.md) for batch templates.
+- Start with [inference-jobs/README.md](inference-jobs/README.md) for inference templates.
+- Start with [batch-jobs/README.md](batch-jobs/README.md) for batch templates.
 
 These examples use public images and current `@jungle-grid/cli` flags from the live docs. They are designed to be copied, then adjusted for your own image, command, and model size.
 
-### Claude Desktop and Cursor
+### MCP hosts
 
-- [claude-desktop/README.md](/home/invinc/code/junglegrid-examples/claude-desktop/README.md)
-- [cursor/README.md](/home/invinc/code/junglegrid-examples/cursor/README.md)
+- [claude-desktop/README.md](claude-desktop/README.md)
+- [cursor/README.md](cursor/README.md)
+- [windsurf/README.md](windsurf/README.md)
+- [mcp-hosts/README.md](mcp-hosts/README.md)
 
-Both examples use the current MCP package:
+These examples use the current MCP package:
 
 ```json
 {
@@ -87,11 +91,11 @@ Both examples use the current MCP package:
 }
 ```
 
-Set `JUNGLE_GRID_API_KEY` in the MCP server environment. Do not commit real keys.
+Set `JUNGLE_GRID_API_KEY` in the MCP server environment. Use `JUNGLE_GRID_API_URL` only when targeting a non-default Jungle Grid API environment, such as local development, staging, or a private deployment. Do not commit real keys.
 
 ### REST API
 
-The examples in [api/README.md](/home/invinc/code/junglegrid-examples/api/README.md) show the recommended server-side pattern:
+The examples in [api/README.md](api/README.md) show the recommended server-side pattern:
 
 - keep `JUNGLE_GRID_API_KEY` on the server
 - forward only approved fields to `https://api.junglegrid.dev`
@@ -123,12 +127,12 @@ Use email for account, product, or integration support. Use Discord for communit
 
 ## Contributing
 
-See [CONTRIBUTING.md](/home/invinc/code/junglegrid-examples/CONTRIBUTING.md) for contribution guidelines. New examples should be runnable, documented, and safe to publish.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. New examples should be runnable, documented, and safe to publish.
 
 ## License
 
-This repository is licensed under the MIT License. See [LICENSE](/home/invinc/code/junglegrid-examples/LICENSE).
+This repository is licensed under the MIT License. See [LICENSE](LICENSE).
 
 ## Security
 
-See [SECURITY.md](/home/invinc/code/junglegrid-examples/SECURITY.md) for vulnerability reporting instructions.
+See [SECURITY.md](SECURITY.md) for vulnerability reporting instructions.
