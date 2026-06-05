@@ -12,5 +12,6 @@ Server-side examples for calling the Jungle Grid REST API.
 
 - [node-express/server.mjs](/home/invinc/code/junglegrid-examples/api/node-express/server.mjs) — minimal Express proxy for job estimates and submissions
 - [python-fastapi/main.py](/home/invinc/code/junglegrid-examples/api/python-fastapi/main.py) — minimal FastAPI proxy for job estimates and submissions
+- [audio-transcription-uploaded-files.md](audio-transcription-uploaded-files.md) — copy-paste REST flow for input upload, script upload, estimate, submit, events, logs, and artifact download
 
 These examples intentionally forward a narrow request shape instead of acting as a blind proxy.
