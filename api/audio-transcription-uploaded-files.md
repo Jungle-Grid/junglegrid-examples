@@ -81,7 +81,7 @@ curl -sS "$API_BASE/v1/jobs/$JOB_ID/events" -H "$AUTH_HEADER"
 curl -sS "$API_BASE/v1/jobs/$JOB_ID/logs?limit=100" -H "$AUTH_HEADER"
 ```
 
-If `startup_diagnostics.command_spawned` is `false`, workload stdout/stderr may not exist yet. Show platform events and continue polling instead of treating empty logs as failure.
+If `startup_diagnostics.command_spawned` is `false`, workload stdout/stderr may not exist yet. Show platform events and continue polling instead of treating empty logs as failure. Log entries include `category`; only `workload_stdout` and `workload_stderr` count toward `startup_diagnostics.workload_logs_available`. Uploaded input/script success does not prove those files were prepared inside the runtime; `inputs_prepared` and `scripts_prepared` may be `null` until the managed runtime emits structured preparation checkpoints.
 
 ## 6. Download the transcript
 
